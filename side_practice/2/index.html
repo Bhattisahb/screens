@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash App Splash Screen</title>
+    <style>
+        /* 1. Resetting margins and setting up the full screen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            
+            /* The bright green background color */
+            background-color: #00D632; 
+            
+            /* Flexbox is used to perfectly center the logo in the middle of the screen */
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        /* 2. The black rounded square */
+        .logo-container {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 24px; /* Makes the corners rounded */
+            
+            /* Flexbox again to center the dollar sign inside the black box */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 3. The green dollar sign */
+        .dollar-sign {
+            color: #00D632;
+            font-size: 64px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- This is the black box -->
+    <div class="logo-container">
+        <!-- This is the dollar sign inside it -->
+        <div class="dollar-sign">$</div>
+    </div>
+</body>
+</html>
