@@ -1,17 +1,19 @@
 void main(){
 
-String  rawprice = '49.95';
-String rawquantity = '3';
+  String name = 'HUSNAIN';
+  String age  =  '24';
+  String batch = '19';
 
-double parsedprice = double.parse(rawprice);
-double parsedquantity = double.parse(rawquantity);
-print(parsedprice * parsedquantity);
 
-num subtotal = parsedprice * parsedquantity ;
+  double parsedage = double.parse(age);
 
-print('Subtotal: \$$subtotal');
+  double parsedbatch =  double.parse(batch);
+  double division = parsedage/parsedbatch;
 
-String fixedsubtotal = subtotal.toStringAsFixed(2);
-print('\$$fixedsubtotal');
+  print(division);
 
+  String formatteddivision = division.toStringAsFixed(2);
+
+
+  print(formatteddivision);
 }
